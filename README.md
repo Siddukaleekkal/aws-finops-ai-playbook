@@ -1,16 +1,16 @@
 This repository provides actionable code, templates, and analysis tools to implement advanced FinOps strategies for high-cost Artificial Intelligence (AI) and Machine Learning (ML) workloads on **AWS**.
 
-The focus is on **Day 5 FinOps Optimization**: moving beyond reporting to strategically reducing spend through cost arbitrage and AWS-native features like Savings Plans, Reserved Instances, and Spot Fleets.
+The focus is on: moving beyond reporting to strategically reducing spend through cost arbitrage and AWS-native features like Savings Plans, Reserved Instances, and Spot Fleets.
 
 ---
 
-## 🎯 Key Strategies Covered
+## Key Strategies Covered
 
 1.  **Resource Tagging (The Foundation):** Establishing an enforced tagging standard across AWS resources for accurate cost allocation and unit economics (Cost per Inference, Cost per Training Epoch).
 2.  **Spot Arbitrage:** Leveraging high-discount, interruptible **EC2 Spot Fleet** capacity (up to 90% savings) for fault-tolerant workloads like model training and batch processing.
 3.  **Committed Use Arbitrage:** Analyzing and purchasing long-term commitments (**Savings Plans/RIs**) for stable, production AI inference clusters.
 
-## 📂 Directory Guide
+## Directory Guide
 
 | Directory | Purpose | Key File(s) |
 | :--- | :--- | :--- |
@@ -19,7 +19,7 @@ The focus is on **Day 5 FinOps Optimization**: moving beyond reporting to strate
 
 ---
 
-## 💡 Recommended Next Steps
+## Recommended Next Steps
 
 1.  Review and adopt the `tagging-schema.json` in your organization.
 2.  Deploy the `aws-config-rule.yaml` to enforce tagging compliance.
