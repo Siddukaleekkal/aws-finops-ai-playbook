@@ -1,0 +1,28 @@
+# --- General Operating System Files ---
+.DS_Store
+.vscode/
+
+# --- Python Specific Files ---
+# Byte-compiled files
+__pycache__/
+*.pyc
+
+# Virtual Environment
+.venv/
+venv/
+env/
+
+# Dependency files
+Pipfile.lock
+
+# --- Jupyter/Analysis Specific (Common in ML/AI Repos) ---
+.ipynb_checkpoints
+
+# --- Security: CRITICAL to ignore local credentials ---
+.aws/
+credentials.csv
+secrets.json
+
+# --- General Build/Testing Files ---
+/dist
+/build

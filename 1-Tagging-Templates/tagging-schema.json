@@ -1,0 +1,38 @@
+{
+  "SchemaName": "AIFinOps_V1",
+  "Description": "Mandatory and optional tags for AWS AI/ML resources to ensure accurate cost allocation and unit economics tracking.",
+  "MandatoryTags": [
+    {
+      "Key": "Environment",
+      "Description": "The lifecycle stage of the resource.",
+      "Values": ["Production", "Staging", "Training", "Development"]
+    },
+    {
+      "Key": "Owner",
+      "Description": "The primary team/cost center responsible for the spend (e.g., team-data-science, team-platform).",
+      "Values": []
+    },
+    {
+      "Key": "ProjectID",
+      "Description": "Unique ID for the specific AI project or model being developed/served (e.g., genai-chatbot-v3, nlp-sentiment-v2).",
+      "Values": []
+    }
+  ],
+  "AIMLOptionalTags": [
+    {
+      "Key": "WorkloadType",
+      "Description": "Distinguishes between bursty vs. sustained compute needs.",
+      "Values": ["Training", "Inference-API", "Inference-Batch", "Experimentation"]
+    },
+    {
+      "Key": "UnitMetric",
+      "Description": "The denominator for cost-per-unit tracking (e.g., Tokens, Queries, Epochs).",
+      "Values": []
+    },
+    {
+      "Key": "ArbitrageStrategy",
+      "Description": "Used to track if the resource is intentionally using a specific optimization strategy.",
+      "Values": ["OnDemand", "Spot/Preemptible", "CommittedUse"]
+    }
+  ]
+}
