@@ -51,11 +51,11 @@ def launch_spot_fleet(image_id: str, desired_capacity: int):
                 'Type': 'request'
             }
         )
-        print("✅ Successfully submitted Spot Fleet Request.")
+        print("Successfully submitted Spot Fleet Request.")
         print(f"Request ID: {response['SpotFleetRequestId']}")
         return response
     except Exception as e:
-        print(f"❌ Error launching Spot Fleet: {e}")
+        print(f"Error launching Spot Fleet: {e}")
         return None
 
 if __name__ == "__main__":
